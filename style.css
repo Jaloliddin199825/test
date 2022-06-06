@@ -1,24 +1,36 @@
 * {
-    margin: 0 ;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
-ul, a {
+
+::selection {
+    background: yellow;
+    color: red;
+}
+::webki
+ul,
+a {
     text-decoration: none;
     list-style: none;
 }
+
 .container {
     max-width: 1320px;
     width: 100%;
     margin: 0 auto;
     padding: 0 12px;
-    
+
 }
-.header{
+
+.header {
     min-height: 100vh;
     background: dodgerblue;
+    display: flex;
+flex-direction: column;
 }
+
 .header__nav {
     padding: 20px 0;
 }
@@ -34,12 +46,28 @@ ul, a {
     font-size: 36px;
     color: #fff;
 }
-.header__list{
+
+.header__list {
     display: flex;
     column-gap: 30px;
-    
+
 }
-.header__link{
+
+.header__link {
     font-size: 20px;
     color: #fff;
+}
+
+.header__content {
+    display: flex;
+text-align: center;
+    align-items: center;
+    flex-grow: 1;
+color: #fff;
+} 
+.header__title{
+    font-size: 60px;
+}
+.header__txt{
+    font-size: 22px;
 }
